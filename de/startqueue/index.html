@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>StartQueue: Autostart-Verwaltung für Windows 11 | EsteemWorks</title>
+<meta name="description" content="Eine kostenlose Autostart-Verwaltung für Windows 11: eine Startreihenfolge für jede Autostart-App, mit Profilen, leisen Starts und vorbereitetem Herunterfahren.">
+<link rel="icon" type="image/png" sizes="64x64" href="../../assets/img/favicon-64.png">
+<link rel="apple-touch-icon" href="../../assets/img/apple-touch-icon.png">
+<link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+<div class="ew" style="background: var(--Bg); color: var(--Text2); font-family: 'Segoe UI', system-ui, sans-serif; font-size: 16px; line-height: 1.55; min-height: 100vh">
+
+<header style="background: var(--HeroBg)">
+<nav class="ew-nav" aria-label="Hauptmenü" style="max-width: 1200px; margin: 0 auto; padding: 20px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px 32px">
+<a href="../index.html" aria-label="EsteemWorks Startseite" style="display: flex; align-items: center"><img src="../../assets/img/esteemworks-wordmark-ember-dark.svg" alt="EsteemWorks" width="187" height="30" style="height: 30px; width: auto; display: block"></a>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 28px; font-size: 15px; font-weight: 600">
+<a href="../index.html#apps">Apps</a>
+<a href="../index.html#organizations">Für Organisationen</a>
+<a href="https://github.com/esteemworks">GitHub</a>
+<div role="group" aria-label="Sprache" style="display: inline-flex; border: 1px solid rgba(255,255,255,.24); border-radius: 6px; overflow: hidden; font-size: 13px">
+<a href="../../startqueue/index.html" hreflang="en" lang="en" style="padding: 4px 10px">EN</a>
+<a href="index.html" hreflang="de" lang="de" aria-current="true" style="padding: 4px 10px; background: rgba(255,255,255,.12); color: #ffffff">DE</a>
+</div>
+</div>
+</nav>
+
+<section style="max-width: 1200px; margin: 0 auto; padding: 48px 24px 80px; display: flex; flex-wrap: wrap; align-items: center; gap: 48px 56px">
+<div style="flex: 1 1 440px; min-width: 0; display: flex; flex-direction: column; gap: 22px">
+<div style="display: flex; align-items: center; gap: 18px">
+<img src="../../assets/img/startqueue-icon.png" alt="" width="72" height="72" style="width: 72px; height: 72px">
+<h1 style="margin: 0; font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-weight: 800; font-size: clamp(38px, 4.4vw, 52px); line-height: 1; color: #ffffff">StartQueue</h1>
+</div>
+<p style="margin: 0; font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-weight: 700; font-size: 30px; line-height: 1.15; color: #ffffff">Deine Apps nach der Anmeldung, in deiner Reihenfolge, bereit, wenn du dich hinsetzt.</p>
+<p style="margin: 0; font-size: 18px; color: #cfcfcf; max-width: 32em">Eine kostenlose Autostart-Verwaltung für Windows 11: eine Startreihenfolge für jede Autostart-App, mit Profilen, leisen Starts und vorbereitetem Herunterfahren.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 12px">
+<a class="ew-btn ew-btn-primary" href="#download">Herunterladen</a>
+<a class="ew-btn ew-btn-hero" href="https://github.com/esteemworks/StartQueue">Quellcode auf GitHub</a>
+</div>
+<p style="margin: 0; font-size: 14px; color: #cfcfcf">Version 1.5.3, 55 MB. Kostenlos, Quellcode auf GitHub.</p>
+</div>
+<div style="flex: 1 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 12px">
+<a class="ew-play" href="https://github.com/esteemworks/StartQueue#see-it-in-action" style="position: relative; display: block; border-radius: 10px; overflow: hidden; border: 1px solid rgba(255,255,255,.14); text-decoration: none">
+<img src="../../assets/img/startqueue-dark.png" alt="" width="1360" height="900" style="display: block; width: 100%; height: auto">
+<span style="position: absolute; inset: 0; background: rgba(0,0,0,.42); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px">
+<span class="ew-play-dot" style="width: 76px; height: 76px; border-radius: 50%; background: linear-gradient(135deg, #f59f00, #e8590c, #c92a2a); display: flex; align-items: center; justify-content: center; transition: transform .15s">
+<svg aria-hidden="true" width="30" height="30" viewBox="0 0 24 24" fill="#ffffff"><path d="M8 5.5v13l11-6.5z"></path></svg>
+</span>
+<span style="font-size: 16px; font-weight: 600; color: #ffffff">Tour ansehen, 1:31</span>
+</span>
+</a>
+</div>
+</section>
+</header>
+<div aria-hidden="true" style="height: 3px; background: linear-gradient(90deg, #f59f00, #e8590c, #c92a2a)"></div>
+
+<main>
+<section style="max-width: 1200px; margin: 0 auto; padding: 88px 24px 40px; display: flex; flex-direction: column; gap: 32px">
+<h2 style="margin: 0; font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-weight: 800; font-size: 40px; line-height: 1.1; color: var(--Text1)">Was es kann</h2>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 330px), 1fr)); gap: 24px">
+<div style="background: var(--Surface); border: 1px solid var(--Line); border-radius: 10px; padding: 24px; display: flex; flex-direction: column; gap: 8px">
+<h3 style="margin: 0; font-size: 18px; font-weight: 700; color: var(--Text1)">Eine Liste für alles, was startet</h3>
+<p style="margin: 0; color: var(--Text3)">Jede App, die mit Windows startet, egal wo sie eingetragen wurde, in einer Reihenfolge. Zum Sortieren ziehen, eine Verzögerung einstellen oder warten, bis eine App wirklich läuft.</p>
+</div>
+<div style="background: var(--Surface); border: 1px solid var(--Line); border-radius: 10px; padding: 24px; display: flex; flex-direction: column; gap: 8px">
+<h3 style="margin: 0; font-size: 18px; font-weight: 700; color: var(--Text1)">Startet früh und zeigt, wie lange es gedauert hat</h3>
+<p style="margin: 0; color: var(--Text3)">Deine ersten Apps starten direkt nach der Anmeldung, und StartQueue zeigt, wann jede gestartet ist. Auf dem PC des Autors startet die erste App etwa 8 Sekunden nach der Anmeldung statt nach etwa 60.</p>
+</div>
+<div style="background: var(--Surface); border: 1px solid var(--Line); border-radius: 10px; padding: 24px; display: flex; flex-direction: column; gap: 8px">
+<h3 style="margin: 0; font-size: 18px; font-weight: 700; color: var(--Text1)">Bereit, wenn du dich hinsetzt</h3>
+<p style="margin: 0; color: var(--Text3)">Fahr mit vorbereiteten Apps herunter: Beim nächsten Start meldet Windows dich an und sperrt den Bildschirm, und deine Apps starten hinter dem Sperrbildschirm.</p>
+</div>
+<div style="background: var(--Surface); border: 1px solid var(--Line); border-radius: 10px; padding: 24px; display: flex; flex-direction: column; gap: 8px">
+<h3 style="margin: 0; font-size: 18px; font-weight: 700; color: var(--Text1)">Profile für Arbeit und Wochenende</h3>
+<p style="margin: 0; color: var(--Text3)">Wochentage, Uhrzeiten oder ganztägig, in einer Reihenfolge, die du ziehst. Plane eine Pause wie eine Abwesenheitsnotiz. Jedes Profil hat seine eigene Farbe.</p>
+</div>
+<div style="background: var(--Surface); border: 1px solid var(--Line); border-radius: 10px; padding: 24px; display: flex; flex-direction: column; gap: 8px">
+<h3 style="margin: 0; font-size: 18px; font-weight: 700; color: var(--Text1)">Leise Starts</h3>
+<p style="margin: 0; color: var(--Text3)">Normal, minimiert oder direkt in den Infobereich, für jede App einzeln. StartQueue kennt die Startparameter vieler Apps und lernt neue dazu.</p>
+</div>
+<div style="background: var(--Surface); border: 1px solid var(--Line); border-radius: 10px; padding: 24px; display: flex; flex-direction: column; gap: 8px">
+<h3 style="margin: 0; font-size: 18px; font-weight: 700; color: var(--Text1)">Der Autostart bleibt sauber</h3>
+<p style="margin: 0; color: var(--Text3)">Trägt sich eine App wieder selbst ein, merkt StartQueue das sofort und übernimmt sie, schaltet sie ab oder sagt dir nur Bescheid, ganz wie du willst.</p>
+</div>
+</div>
+</section>
+
+<section style="max-width: 1200px; margin: 0 auto; padding: 48px 24px 88px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 480px), 1fr)); gap: 24px">
+<figure style="margin: 0; display: flex; flex-direction: column; gap: 10px">
+<img src="../../assets/img/startqueue-light.png" alt="StartQueue, die Startreihenfolge im hellen Farbmodus" width="1360" height="900" style="display: block; width: 100%; height: auto; border-radius: 10px; border: 1px solid var(--Line)">
+<figcaption style="font-size: 14px; color: var(--Text4)">Die Startreihenfolge im hellen Farbmodus</figcaption>
+</figure>
+<figure style="margin: 0; display: flex; flex-direction: column; gap: 10px">
+<img src="../../assets/img/startqueue-dark.png" alt="StartQueue, die Startreihenfolge im dunklen Farbmodus" width="1360" height="900" style="display: block; width: 100%; height: auto; border-radius: 10px; border: 1px solid var(--Line)">
+<figcaption style="font-size: 14px; color: var(--Text4)">Dieselbe Liste im dunklen Farbmodus</figcaption>
+</figure>
+</section>
+
+<section id="download" style="background: var(--Surface2); border-top: 1px solid var(--Line); border-bottom: 1px solid var(--Line)">
+<div style="max-width: 1200px; margin: 0 auto; padding: 72px 24px; display: flex; flex-direction: column; gap: 28px">
+<div style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 20px">
+<div style="display: flex; flex-direction: column; gap: 8px">
+<h2 style="margin: 0; font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-weight: 800; font-size: 40px; line-height: 1.1; color: var(--Text1)">Herunterladen</h2>
+<p style="margin: 0; color: var(--Text3)">Für Windows 11, und auf Windows 10 läuft es mit ein paar fehlenden Details. Ohne Adminrechte verwaltet StartQueue deine eigenen Autostart-Einträge. Den vollen Umfang gibt es mit einer Installation mit Adminrechten.</p>
+</div>
+<a class="ew-btn ew-btn-primary" href="https://github.com/esteemworks/StartQueue/releases/latest">Setup herunterladen</a>
+</div>
+<details style="background: var(--Surface); border: 1px solid var(--Line); border-radius: 10px; padding: 0 20px">
+<summary style="cursor: pointer; padding: 16px 0; font-weight: 700; color: var(--Text1)">Was Adminrechte braucht</summary>
+<div style="overflow-x: auto; margin: 0 -20px; border-top: 1px solid var(--Line)">
+<table style="width: 100%; min-width: 640px; border-collapse: collapse; font-size: 15px; text-align: left">
+<thead>
+<tr style="color: var(--Text1)">
+<th scope="col" style="padding: 16px 20px; border-bottom: 1px solid var(--Line); width: 26%"></th>
+<th scope="col" style="padding: 16px 20px; border-bottom: 1px solid var(--Line); font-weight: 700">Ohne Adminrechte</th>
+<th scope="col" style="padding: 16px 20px; border-bottom: 1px solid var(--Line); font-weight: 700">Mit Adminrechten installiert</th>
+</tr>
+</thead>
+<tbody style="color: var(--Text3)">
+<tr><th scope="row" style="padding: 14px 20px; border-bottom: 1px solid var(--Line); font-weight: 600; color: var(--Text1)">Deine eigenen Autostart-Einträge</th><td style="padding: 14px 20px; border-bottom: 1px solid var(--Line)">Übernommen</td><td style="padding: 14px 20px; border-bottom: 1px solid var(--Line)">Übernommen</td></tr>
+<tr><th scope="row" style="padding: 14px 20px; border-bottom: 1px solid var(--Line); font-weight: 600; color: var(--Text1)">Einträge für alle Benutzer</th><td style="padding: 14px 20px; border-bottom: 1px solid var(--Line)">Bleiben bei Windows</td><td style="padding: 14px 20px; border-bottom: 1px solid var(--Line)">Übernommen</td></tr>
+<tr><th scope="row" style="padding: 14px 20px; border-bottom: 1px solid var(--Line); font-weight: 600; color: var(--Text1)">Apps als Administrator</th><td style="padding: 14px 20px; border-bottom: 1px solid var(--Line)">Nicht verfügbar</td><td style="padding: 14px 20px; border-bottom: 1px solid var(--Line)">Ohne UAC-Abfrage</td></tr>
+<tr><th scope="row" style="padding: 14px 20px; border-bottom: 1px solid var(--Line); font-weight: 600; color: var(--Text1)">Kontextmenü im Explorer</th><td style="padding: 14px 20px; border-bottom: 1px solid var(--Line)">Unter „Weitere Optionen anzeigen“</td><td style="padding: 14px 20px; border-bottom: 1px solid var(--Line)">Im Menü von Windows 11</td></tr>
+<tr><th scope="row" style="padding: 14px 20px; border-bottom: 1px solid var(--Line); font-weight: 600; color: var(--Text1)">Windows-Dienste</th><td style="padding: 14px 20px; border-bottom: 1px solid var(--Line)">Mit UAC-Abfrage und Admin-Konto</td><td style="padding: 14px 20px; border-bottom: 1px solid var(--Line)">Mit UAC-Abfrage</td></tr>
+<tr><th scope="row" style="padding: 14px 20px; font-weight: 600; color: var(--Text1)">Vorbereitetes Herunterfahren</th><td style="padding: 14px 20px">Ein Administrator richtet es einmal ein</td><td style="padding: 14px 20px">Ein Klick in den Einstellungen</td></tr>
+</tbody>
+</table>
+</div>
+</details>
+<p style="margin: 0; color: var(--Text3); font-size: 15px">Den Admin-Teil kannst du auch später in den Einstellungen einrichten. Die Deinstallation über die Windows-Einstellungen gibt jeden Eintrag an Windows zurück.</p>
+<p role="note" style="margin: 0; padding: 12px 14px; border-radius: 8px; background: var(--WarnBg); color: var(--WarnText); font-size: 14px">Das Setup ist noch nicht signiert. Windows SmartScreen warnt vielleicht vor einem unbekannten Herausgeber: Wähle „Weitere Informationen“, dann „Trotzdem ausführen“.</p>
+</div>
+</section>
+
+<section style="max-width: 1200px; margin: 0 auto; padding: 88px 24px 40px; display: flex; flex-wrap: wrap; gap: 32px 56px">
+<div style="flex: 1 1 300px; min-width: 0">
+<h2 style="margin: 0; font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-weight: 800; font-size: 34px; line-height: 1.12; color: var(--Text1)">Fragen</h2>
+</div>
+<div class="ew-faq" style="flex: 2 1 560px; min-width: 0; border-top: 1px solid var(--Line)">
+<details open style="border-bottom: 1px solid var(--Line)">
+<summary>Startet mein PC schneller?</summary>
+<p style="margin: 0 0 18px; color: var(--Text3)">Windows selbst fährt nicht schneller hoch. Deine Apps starten früher und in der Reihenfolge, die du wählst, und das Fenster zeigt, wann jede bei der letzten Anmeldung gestartet ist. Am meisten bringt das vorbereitete Herunterfahren: Deine Apps starten, bevor du dich hinsetzt.</p>
+</details>
+<details style="border-bottom: 1px solid var(--Line)">
+<summary>Ist das vorbereitete Herunterfahren sicher?</summary>
+<p style="margin: 0 0 18px; color: var(--Text3)">Danach ist der PC angemeldet, aber gesperrt, wie nach Windows+L. Zum Entsperren brauchst du wie immer PIN, Kennwort oder Windows Hello. Messenger zeigen dich vielleicht schon als online, bevor du am PC sitzt.</p>
+</details>
+<details style="border-bottom: 1px solid var(--Line)">
+<summary>Kann ich alles rückgängig machen?</summary>
+<p style="margin: 0 0 18px; color: var(--Text3)">Ja. Jeder Eintrag lässt sich einzeln an Windows zurückgeben, und die Deinstallation gibt alle zurück.</p>
+</details>
+</div>
+</section>
+
+<section style="max-width: 1200px; margin: 0 auto; padding: 40px 24px 88px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 480px), 1fr)); gap: 24px">
+<a href="../dynatones/index.html" style="background: var(--Surface); border: 1px solid var(--Line); border-radius: 10px; padding: 24px; display: flex; align-items: center; gap: 16px; text-decoration: none; color: var(--Text3)">
+<img src="../../assets/img/dynatones-icon.png" alt="" width="48" height="48" style="width: 48px; height: 48px; flex-shrink: 0">
+<span style="display: flex; flex-direction: column; gap: 2px">
+<span style="font-size: 12px; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; color: var(--Text4)">Mehr von EsteemWorks</span>
+<span style="font-size: 18px; font-weight: 700; color: var(--Text1)">DynaTones</span>
+<span>Dein Desktop folgt der Sonne.</span>
+</span>
+</a>
+</section>
+</main>
+
+
+<footer class="ew-foot" style="background: var(--Footer); border-top: 1px solid var(--Line)">
+<div style="max-width: 1200px; margin: 0 auto; padding: 48px 24px 40px; display: flex; flex-wrap: wrap; gap: 32px 64px; justify-content: space-between">
+<div style="display: flex; flex-direction: column; gap: 12px; flex: 1 1 280px">
+<picture><source media="(prefers-color-scheme: dark)" srcset="../../assets/img/esteemworks-wordmark-ember-dark.svg"><img src="../../assets/img/esteemworks-wordmark-ember-light.svg" alt="EsteemWorks" width="149" height="24" style="height: 24px; width: auto; display: block; align-self: flex-start"></picture>
+<p style="margin: 0; font-size: 14px; color: var(--Text4)">Kostenlose Apps für Windows 11.</p>
+<p style="margin: 0; font-size: 14px; color: var(--Text4)">Ihr Quellcode ist offen unter der MIT-Lizenz; die gemeinsame Bibliothek darin ist mit den Apps frei nutzbar, aber nicht Open Source.</p>
+<p style="margin: 0; font-size: 14px; color: var(--Text4)">Kein Konto und keine Telemetrie: Die Apps suchen nur auf GitHub nach Updates, und diese Seite setzt keine Cookies.</p>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 32px 64px; font-size: 14px">
+<div style="display: flex; flex-direction: column; gap: 8px">
+<p style="margin: 0; font-size: 12px; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; color: var(--Text4)">Apps</p>
+<a href="index.html">StartQueue</a>
+<a href="../dynatones/index.html">DynaTones</a>
+</div>
+<div style="display: flex; flex-direction: column; gap: 8px">
+<p style="margin: 0; font-size: 12px; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; color: var(--Text4)">Projekt</p>
+<a href="https://github.com/esteemworks">GitHub</a>
+<a href="../index.html#organizations">Für Organisationen</a>
+</div>
+<div style="display: flex; flex-direction: column; gap: 8px">
+<p style="margin: 0; font-size: 12px; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; color: var(--Text4)">Rechtliches</p>
+<a href="../datenschutz/index.html">Datenschutz</a>
+<a href="../impressum/index.html">Impressum</a>
+<a href="https://github.com/esteemworks/StartQueue/blob/main/LICENSE">MIT-Lizenz</a>
+</div>
+</div>
+</div>
+<div style="max-width: 1200px; margin: 0 auto; padding: 16px 24px 32px; font-size: 13px; color: var(--Text4)">© 2026 Leon Tüpker. Ein Hobbyprojekt, mit KI gemacht.</div>
+</footer>
+
+</div>
+</body>
+</html>

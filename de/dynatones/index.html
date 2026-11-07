@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>DynaTones: Hintergrundbild und Farbmodus nach der Sonne | EsteemWorks</title>
+<meta name="description" content="Eine kostenlose App für Windows 11. Sie wechselt das Hintergrundbild über den Tag und schaltet den Farbmodus bei Sonnenauf- und -untergang um, aus einer Berechnung der Sonne.">
+<link rel="icon" type="image/png" sizes="64x64" href="../../assets/img/favicon-64.png">
+<link rel="apple-touch-icon" href="../../assets/img/apple-touch-icon.png">
+<link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body>
+<div class="ew" style="background: var(--Bg); color: var(--Text2); font-family: 'Segoe UI', system-ui, sans-serif; font-size: 16px; line-height: 1.55; min-height: 100vh">
+
+<header style="background: var(--HeroBg)">
+<nav class="ew-nav" aria-label="Hauptmenü" style="max-width: 1200px; margin: 0 auto; padding: 20px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px 32px">
+<a href="../index.html" aria-label="EsteemWorks Startseite" style="display: flex; align-items: center"><img src="../../assets/img/esteemworks-wordmark-ember-dark.svg" alt="EsteemWorks" width="187" height="30" style="height: 30px; width: auto; display: block"></a>
+<div style="display: flex; flex-wrap: wrap; align-items: center; gap: 8px 28px; font-size: 15px; font-weight: 600">
+<a href="../index.html#apps">Apps</a>
+<a href="../index.html#organizations">Für Organisationen</a>
+<a href="https://github.com/esteemworks">GitHub</a>
+<div role="group" aria-label="Sprache" style="display: inline-flex; border: 1px solid rgba(255,255,255,.24); border-radius: 6px; overflow: hidden; font-size: 13px">
+<a href="../../dynatones/index.html" hreflang="en" lang="en" style="padding: 4px 10px">EN</a>
+<a href="index.html" hreflang="de" lang="de" aria-current="true" style="padding: 4px 10px; background: rgba(255,255,255,.12); color: #ffffff">DE</a>
+</div>
+</div>
+</nav>
+
+<section style="max-width: 1200px; margin: 0 auto; padding: 48px 24px 80px; display: flex; flex-wrap: wrap; align-items: center; gap: 48px 56px">
+<div style="flex: 1 1 440px; min-width: 0; display: flex; flex-direction: column; gap: 22px">
+<div style="display: flex; align-items: center; gap: 18px">
+<img src="../../assets/img/dynatones-icon.png" alt="" width="72" height="72" style="width: 72px; height: 72px">
+<h1 style="margin: 0; font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-weight: 800; font-size: clamp(38px, 4.4vw, 52px); line-height: 1; color: #ffffff">DynaTones</h1>
+</div>
+<p style="margin: 0; font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-weight: 700; font-size: 30px; line-height: 1.15; color: #ffffff">Dein Desktop folgt der Sonne.</p>
+<p style="margin: 0; font-size: 18px; color: #cfcfcf; max-width: 32em">Eine kostenlose App für Windows 11. Sie wechselt das Hintergrundbild über den Tag und schaltet den Farbmodus bei Sonnenauf- und -untergang um, aus einer Berechnung der Sonne.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 12px">
+<a class="ew-btn ew-btn-primary" href="#download">Herunterladen</a>
+<a class="ew-btn ew-btn-hero" href="https://github.com/esteemworks/DynaTones">Quellcode auf GitHub</a>
+</div>
+<p style="margin: 0; font-size: 14px; color: #cfcfcf">Version 0.4.0, 57 MB. Kostenlos, Quellcode auf GitHub.</p>
+</div>
+<a class="ew-play" href="https://github.com/esteemworks/DynaTones#see-it-in-action" style="flex: 1 1 520px; min-width: 0; position: relative; display: block; border-radius: 10px; overflow: hidden; border: 1px solid rgba(255,255,255,.14); text-decoration: none">
+<img src="../../assets/img/dynatones-dark.png" alt="" width="1360" height="1000" style="display: block; width: 100%; height: auto">
+<span style="position: absolute; inset: 0; background: rgba(0,0,0,.42); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px">
+<span class="ew-play-dot" style="width: 76px; height: 76px; border-radius: 50%; background: linear-gradient(135deg, #ffd43b, #ff6b6b, #7048e8); display: flex; align-items: center; justify-content: center; transition: transform .15s">
+<svg aria-hidden="true" width="30" height="30" viewBox="0 0 24 24" fill="#ffffff"><path d="M8 5.5v13l11-6.5z"></path></svg>
+</span>
+<span style="font-size: 16px; font-weight: 600; color: #ffffff">Film ansehen, 1:31</span>
+</span>
+</a>
+</section>
+</header>
+<div aria-hidden="true" style="height: 3px; background: linear-gradient(90deg, #ffd43b, #ff6b6b, #7048e8)"></div>
+
+<main>
+<section style="max-width: 1200px; margin: 0 auto; padding: 88px 24px 40px; display: flex; flex-direction: column; gap: 32px">
+<h2 style="margin: 0; font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-weight: 800; font-size: 40px; line-height: 1.1; color: var(--Text1)">Was es kann</h2>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 330px), 1fr)); gap: 24px">
+<div style="background: var(--Surface); border: 1px solid var(--Line); border-radius: 10px; padding: 24px; display: flex; flex-direction: column; gap: 8px">
+<h3 style="margin: 0; font-size: 18px; font-weight: 700; color: var(--Text1)">Licht, das fließt</h3>
+<p style="margin: 0; color: var(--Text3)">Vor dem nächsten Bild blendet DynaTones die beiden jede Minute ein Stück weiter über, über 10, 30 oder 60 Minuten. Derselbe Ort ändert langsam sein Licht.</p>
+</div>
+<div style="background: var(--Surface); border: 1px solid var(--Line); border-radius: 10px; padding: 24px; display: flex; flex-direction: column; gap: 8px">
+<h3 style="margin: 0; font-size: 18px; font-weight: 700; color: var(--Text1)">Richtig im Juni und im Dezember</h3>
+<p style="margin: 0; color: var(--Text3)">Jedes Bild hat seinen Platz auf dem Bogen der Sonne, steigend oder sinkend. Ein Mittagsbild kommt auch im Winter mittags.</p>
+</div>
+<div style="background: var(--Surface); border: 1px solid var(--Line); border-radius: 10px; padding: 24px; display: flex; flex-direction: column; gap: 8px">
+<h3 style="margin: 0; font-size: 18px; font-weight: 700; color: var(--Text1)">Hintergrundbild und Farbmodus zusammen</h3>
+<p style="margin: 0; color: var(--Text3)">Farbmodus nach der Sonne mit Versatz, zu festen Zeiten oder passend zum Bild. Apps, Windows und Mauszeiger jeweils für sich.</p>
+</div>
+<div style="background: var(--Surface); border: 1px solid var(--Line); border-radius: 10px; padding: 24px; display: flex; flex-direction: column; gap: 8px">
+<h3 style="margin: 0; font-size: 18px; font-weight: 700; color: var(--Text1)">Deine eigenen Bilder</h3>
+<p style="margin: 0; color: var(--Text3)">Zieh einen Ordner oder eine .zip auf das Fenster. Automatisch ordnet die Bilder nach Zeit und Ort im Foto ein, oder danach, wie hell sie wirken.</p>
+</div>
+<div style="background: var(--Surface); border: 1px solid var(--Line); border-radius: 10px; padding: 24px; display: flex; flex-direction: column; gap: 8px">
+<h3 style="margin: 0; font-size: 18px; font-weight: 700; color: var(--Text1)">Bleibt auf Kurs</h3>
+<p style="margin: 0; color: var(--Text3)">Nach dem Energiesparmodus, dem Entsperren, einer geänderten Uhrzeit oder einem neuen Bildschirm prüft DynaTones, was zu sehen sein soll, und stellt es wieder her.</p>
+</div>
+<div style="background: var(--Surface); border: 1px solid var(--Line); border-radius: 10px; padding: 24px; display: flex; flex-direction: column; gap: 8px">
+<h3 style="margin: 0; font-size: 18px; font-weight: 700; color: var(--Text1)">Auch der Sperrbildschirm</h3>
+<p style="margin: 0; color: var(--Text3)">Wenn du willst, folgt auch der Sperrbildschirm dem Tag, mit den Bildern des Desktops oder einem eigenen Paket.</p>
+</div>
+</div>
+</section>
+
+<section style="max-width: 1200px; margin: 0 auto; padding: 48px 24px 88px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 480px), 1fr)); gap: 24px">
+<figure style="margin: 0; display: flex; flex-direction: column; gap: 10px">
+<img src="../../assets/img/dynatones-light.png" alt="DynaTones, Heute im hellen Farbmodus" width="1360" height="1000" style="display: block; width: 100%; height: auto; border-radius: 10px; border: 1px solid var(--Line)">
+<figcaption style="font-size: 14px; color: var(--Text4)">Heute, im hellen Farbmodus</figcaption>
+</figure>
+<figure style="margin: 0; display: flex; flex-direction: column; gap: 10px">
+<img src="../../assets/img/dynatones-dark.png" alt="DynaTones, Heute im dunklen Farbmodus" width="1360" height="1000" style="display: block; width: 100%; height: auto; border-radius: 10px; border: 1px solid var(--Line)">
+<figcaption style="font-size: 14px; color: var(--Text4)">Derselbe Tag im dunklen Farbmodus</figcaption>
+</figure>
+</section>
+
+<section id="download" style="background: var(--Surface2); border-top: 1px solid var(--Line); border-bottom: 1px solid var(--Line)">
+<div style="max-width: 1200px; margin: 0 auto; padding: 72px 24px; display: flex; flex-direction: column; gap: 28px">
+<div style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 20px">
+<div style="display: flex; flex-direction: column; gap: 8px">
+<h2 style="margin: 0; font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-weight: 800; font-size: 40px; line-height: 1.1; color: var(--Text1)">Herunterladen</h2>
+<p style="margin: 0; color: var(--Text3)">Für Windows 11, und es läuft auch auf Windows 10.</p>
+</div>
+<a class="ew-btn ew-btn-primary" href="https://github.com/esteemworks/DynaTones/releases/latest">Setup herunterladen</a>
+</div>
+<div style="background: var(--Surface); border: 1px solid var(--Line); border-radius: 10px; padding: 24px; display: flex; flex-direction: column; gap: 8px">
+<h3 style="margin: 0; font-size: 18px; font-weight: 700; color: var(--Text1)">Für Organisationen</h3>
+<p style="margin: 0; color: var(--Text3)">Pro Gerät für alle Benutzer installieren, still oder über das Setup. Einstellungen lassen sich über Gruppenrichtlinien oder Intune mit ADMX-Vorlagen festlegen oder als Vorgaben setzen, die Benutzer ändern können. Updates bleiben dann in der Hand eurer IT. <a href="https://github.com/esteemworks/DynaTones/blob/main/docs/ADMIN.md">Leitfaden für Admins (Englisch)</a></p>
+</div>
+<p role="note" style="margin: 0; padding: 12px 14px; border-radius: 8px; background: var(--WarnBg); color: var(--WarnText); font-size: 14px">Das Setup ist noch nicht signiert. Windows SmartScreen warnt vielleicht vor einem unbekannten Herausgeber: Wähle „Weitere Informationen“, dann „Trotzdem ausführen“.</p>
+</div>
+</section>
+
+<section style="max-width: 1200px; margin: 0 auto; padding: 88px 24px 40px; display: flex; flex-wrap: wrap; gap: 32px 56px">
+<div style="flex: 1 1 300px; min-width: 0">
+<h2 style="margin: 0; font-family: 'Bricolage Grotesque', system-ui, sans-serif; font-weight: 800; font-size: 34px; line-height: 1.12; color: var(--Text1)">Fragen</h2>
+</div>
+<div class="ew-faq" style="flex: 2 1 560px; min-width: 0; border-top: 1px solid var(--Line)">
+<details open style="border-bottom: 1px solid var(--Line)">
+<summary>Braucht DynaTones meinen Standort?</summary>
+<p style="margin: 0 0 18px; color: var(--Text3)">Nein. Es nutzt den Windows-Standort, wenn er eingeschaltet ist, sonst einen Ort oder Koordinaten, die du eingibst, sonst die Zeitzone. Der Tab Standort zeigt, was gerade genutzt wird und warum.</p>
+</details>
+<details style="border-bottom: 1px solid var(--Line)">
+<summary>Ändert es den Anmeldebildschirm?</summary>
+<p style="margin: 0 0 18px; color: var(--Text3)">Nein. Es ändert deinen Sperrbildschirm, wenn du das möchtest. Für den Bildschirm vor der Anmeldung braucht es eine Richtlinie des Geräts.</p>
+</details>
+<details style="border-bottom: 1px solid var(--Line)">
+<summary>Kann ich dynamische Hintergründe nutzen, die ich schon habe?</summary>
+<p style="margin: 0 0 18px; color: var(--Text3)">Ja. Ein Ordner mit Bildern, eine .zip oder ein .ddw-Design wird zum Paket, per Knopf oder indem du es auf das Fenster ziehst.</p>
+</details>
+</div>
+</section>
+
+<section style="max-width: 1200px; margin: 0 auto; padding: 40px 24px 88px; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 480px), 1fr)); gap: 24px">
+<a href="../startqueue/index.html" style="background: var(--Surface); border: 1px solid var(--Line); border-radius: 10px; padding: 24px; display: flex; align-items: center; gap: 16px; text-decoration: none; color: var(--Text3)">
+<img src="../../assets/img/startqueue-icon.png" alt="" width="48" height="48" style="width: 48px; height: 48px; flex-shrink: 0">
+<span style="display: flex; flex-direction: column; gap: 2px">
+<span style="font-size: 12px; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; color: var(--Text4)">Mehr von EsteemWorks</span>
+<span style="font-size: 18px; font-weight: 700; color: var(--Text1)">StartQueue</span>
+<span>Deine Apps nach der Anmeldung, in deiner Reihenfolge, bereit, wenn du dich hinsetzt.</span>
+</span>
+</a>
+</section>
+</main>
+
+
+<footer class="ew-foot" style="background: var(--Footer); border-top: 1px solid var(--Line)">
+<div style="max-width: 1200px; margin: 0 auto; padding: 48px 24px 40px; display: flex; flex-wrap: wrap; gap: 32px 64px; justify-content: space-between">
+<div style="display: flex; flex-direction: column; gap: 12px; flex: 1 1 280px">
+<picture><source media="(prefers-color-scheme: dark)" srcset="../../assets/img/esteemworks-wordmark-ember-dark.svg"><img src="../../assets/img/esteemworks-wordmark-ember-light.svg" alt="EsteemWorks" width="149" height="24" style="height: 24px; width: auto; display: block; align-self: flex-start"></picture>
+<p style="margin: 0; font-size: 14px; color: var(--Text4)">Kostenlose Apps für Windows 11.</p>
+<p style="margin: 0; font-size: 14px; color: var(--Text4)">Ihr Quellcode ist offen unter der MIT-Lizenz; die gemeinsame Bibliothek darin ist mit den Apps frei nutzbar, aber nicht Open Source.</p>
+<p style="margin: 0; font-size: 14px; color: var(--Text4)">Kein Konto und keine Telemetrie: Die Apps suchen nur auf GitHub nach Updates, und diese Seite setzt keine Cookies.</p>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 32px 64px; font-size: 14px">
+<div style="display: flex; flex-direction: column; gap: 8px">
+<p style="margin: 0; font-size: 12px; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; color: var(--Text4)">Apps</p>
+<a href="../startqueue/index.html">StartQueue</a>
+<a href="index.html">DynaTones</a>
+</div>
+<div style="display: flex; flex-direction: column; gap: 8px">
+<p style="margin: 0; font-size: 12px; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; color: var(--Text4)">Projekt</p>
+<a href="https://github.com/esteemworks">GitHub</a>
+<a href="../index.html#organizations">Für Organisationen</a>
+</div>
+<div style="display: flex; flex-direction: column; gap: 8px">
+<p style="margin: 0; font-size: 12px; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; color: var(--Text4)">Rechtliches</p>
+<a href="../datenschutz/index.html">Datenschutz</a>
+<a href="../impressum/index.html">Impressum</a>
+<a href="https://github.com/esteemworks/StartQueue/blob/main/LICENSE">MIT-Lizenz</a>
+</div>
+</div>
+</div>
+<div style="max-width: 1200px; margin: 0 auto; padding: 16px 24px 32px; font-size: 13px; color: var(--Text4)">© 2026 Leon Tüpker. Ein Hobbyprojekt, mit KI gemacht.</div>
+</footer>
+
+</div>
+</body>
+</html>

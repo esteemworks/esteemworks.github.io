@@ -1,0 +1,29 @@
+@font-face{font-family:"Bricolage Grotesque";src:url("fonts/BricolageGrotesque-Variable.ttf") format("truetype");font-weight:200 800;font-stretch:75% 100%;font-display:swap}
+:root{color-scheme:light;--Bg:#f9f9f9;--Surface:#ffffff;--Surface2:#f6f6ef;--Line:#e5e5e5;--ControlLine:#cccccc;--Text1:#282828;--Text2:#363636;--Text3:#4a4a4a;--Text4:#6b6b6b;--Accent:#b8400a;--Hover:#f3f3f3;--Footer:#f9f9f9;--HeroBg:#1c1c1c;--ChipBg:#fff3eb;--ChipText:#a3390a;--WarnBg:#fbf1e1;--WarnText:#8a560c;--Focus:#e8590c}
+@media (prefers-color-scheme: dark){:root{color-scheme:dark;--Bg:#202020;--Surface:#2b2b2b;--Surface2:#333333;--Line:#3a3a3a;--ControlLine:#5a5a5a;--Text1:#ffffff;--Text2:#e4e4e4;--Text3:#c8c8c8;--Text4:#a6a6a6;--Accent:#ff8c4a;--Hover:#323232;--Footer:#262626;--HeroBg:#191919;--ChipBg:#383838;--ChipText:#ffb089;--WarnBg:#433519;--WarnText:#f0c078;--Focus:#ff8c4a}}
+body{margin:0;background:var(--Bg)}
+picture{display:contents}
+a{color:var(--Accent)}
+a:hover{color:var(--Text1)}
+.ew a:focus-visible,.ew summary:focus-visible{outline:2px solid var(--Focus);outline-offset:3px;border-radius:6px}
+.ew-nav a{color:#cfcfcf;text-decoration:none}
+.ew-nav a:hover{color:#ffffff}
+.ew-hero-link{color:#cfcfcf}
+.ew-hero-link:hover{color:#ffffff}
+.ew-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:0 20px;border-radius:6px;font-size:15px;font-weight:600;text-decoration:none;box-sizing:border-box;border:1px solid transparent}
+.ew-btn-primary{background:linear-gradient(90deg,#c94a08,#bc340a);border-color:#bc340a;color:#ffffff}
+.ew-btn-primary:hover{background:linear-gradient(90deg,#b04006,#922705);color:#ffffff}
+.ew-btn-hero{border-color:rgba(255,255,255,.24);color:#ffffff}
+.ew-btn-hero:hover{background:rgba(255,255,255,.12);color:#ffffff}
+.ew-btn-secondary{border-color:var(--ControlLine);background:var(--Surface);color:var(--Text1)}
+.ew-btn-secondary:hover{background:var(--Hover);color:var(--Text1)}
+.ew-foot a{color:var(--Text3);text-decoration:none}
+.ew-foot a:hover{color:var(--Accent);text-decoration:underline}
+.ew-play:hover .ew-play-dot{transform:scale(1.06)}
+.ew-faq summary{cursor:pointer;list-style:none;font-weight:700;color:var(--Text1);padding:18px 0}
+.ew-faq summary::-webkit-details-marker{display:none}
+.ew-legal h2{margin:16px 0 0;font-size:20px;font-weight:700;line-height:1.3;color:var(--Text1)}
+.ew-legal p,.ew-legal ul{margin:0;color:var(--Text3)}
+.ew-legal ul{padding-left:20px;display:flex;flex-direction:column;gap:6px}
+.ew-legal address{font-style:normal;color:var(--Text3)}
+.ew-ph{font-family:Consolas,ui-monospace,monospace;font-size:.95em;color:var(--Text1);background:var(--WarnBg);padding:0 4px;border-radius:4px}
