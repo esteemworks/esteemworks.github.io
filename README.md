@@ -20,8 +20,7 @@ Open `index.html` in a browser. All links are relative, so the site works straig
 
 ## Before it goes live
 
-- Fill the placeholders `[NAME]`, `[ANSCHRIFT]` and `[E-MAIL]` on the imprint and privacy pages in both languages, have
-  both pages checked, and remove the draft note at the top of each
+- Have the imprint and privacy pages checked (both languages); name, address and email are filled in
 - The screenshots in `assets/img` (`startqueue-light.png`, `startqueue-dark.png`, `dynatones-light.png`,
   `dynatones-dark.png`) come from the apps' `docs/images`; replace them under the same names when they are taken again
 - Versions and setup sizes on the app pages are written in the HTML; update them with each release
