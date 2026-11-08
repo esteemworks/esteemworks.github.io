@@ -42,8 +42,8 @@
 <p style="margin: 0; font-size: 14px; color: #cfcfcf">Version 1.6.0, 55 MB. Free, source code on GitHub.</p>
 </div>
 <div style="flex: 1 1 520px; min-width: 0; display: flex; flex-direction: column; gap: 12px">
-<a class="ew-play" href="https://github.com/esteemworks/StartQueue#see-it-in-action" style="position: relative; display: block; border-radius: 10px; overflow: hidden; border: 1px solid rgba(255,255,255,.14); text-decoration: none">
-<img src="../assets/img/startqueue-dark.png" alt="" width="1600" height="1059" style="display: block; width: 100%; height: auto">
+<a class="ew-play" href="../assets/video/startqueue-tour.mp4" data-video="StartQueue tour" style="position: relative; display: block; border-radius: 10px; overflow: hidden; border: 1px solid rgba(255,255,255,.14); text-decoration: none">
+<img src="../assets/video/startqueue-tour.jpg" alt="" width="1920" height="1080" style="display: block; width: 100%; height: auto">
 <span style="position: absolute; inset: 0; background: rgba(0,0,0,.42); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px">
 <span class="ew-play-dot" style="width: 76px; height: 76px; border-radius: 50%; background: linear-gradient(135deg, #f59f00, #e8590c, #c92a2a); display: flex; align-items: center; justify-content: center; transition: transform .15s">
 <svg aria-hidden="true" width="30" height="30" viewBox="0 0 24 24" fill="#ffffff"><path d="M8 5.5v13l11-6.5z"></path></svg>
@@ -198,5 +198,21 @@
 </footer>
 
 </div>
+<script>
+document.querySelectorAll('a[data-video]').forEach(function (a) {
+  a.addEventListener('click', function (e) {
+    e.preventDefault();
+    var v = document.createElement('video');
+    v.src = a.getAttribute('href');
+    v.poster = a.querySelector('img').getAttribute('src');
+    v.controls = true; v.autoplay = true; v.playsInline = true; v.preload = 'auto';
+    v.setAttribute('aria-label', a.getAttribute('data-video'));
+    v.style.cssText = 'display:block;width:100%;height:auto;aspect-ratio:16/9;min-width:0;border-radius:10px;border:1px solid rgba(255,255,255,.14);background:#000';
+    if (a.style.flex) { v.style.flex = a.style.flex; }
+    a.replaceWith(v);
+    v.play().catch(function () {});
+  });
+});
+</script>
 </body>
 </html>
